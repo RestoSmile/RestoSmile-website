@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Navbar.css";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -17,8 +18,8 @@ export default function Navbar() {
 
                     {/* Desktop Menu */}
                     <div className="navbar-links">
-                        <a href="#" className="navbar-link">Home</a>
-                        <a href="#" className="navbar-link">Our Product</a>
+                        <Link to="/" className="navbar-link">Home</Link>
+                        <Link to="/product" className="navbar-link">Our Product</Link>
                         <div className="navbar-search">
                             <input
                                 type="text"
@@ -29,21 +30,21 @@ export default function Navbar() {
                                 <svg className="navbar-search-icon" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8" /><line x1="21" y1="21" x2="16.65" y2="16.65" /></svg>
                             </button>
                         </div>
-                        <a href="#" className="navbar-link navbar-icon-link">
+                        <Link to="/cart" className="navbar-link navbar-icon-link">
                             <svg className="navbar-cart-icon" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M3 3h2l.4 2M7 13h10l4-8H5.4" /><circle cx="7" cy="21" r="2" /><circle cx="17" cy="21" r="2" /></svg>
-                        </a>
-                        <a href="#" className="navbar-link">Oral Health</a>
-                        <a href="#" className="navbar-link">Contact Us</a>
+                        </Link>
+                        <Link to="/oral-health" className="navbar-link">Oral Health</Link>
+                        <Link to="/contact" className="navbar-link">Contact Us</Link>
                     </div>
 
                     {/* Login Icon at the far right */}
-                    <a href="#" className="navbar-login-link">
+                    <Link to="/login" className="navbar-login-link">
                         Login
                         <svg className="navbar-login-icon" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                             <circle cx="12" cy="8" r="4" />
                             <path d="M12 14c-4 0-7 2-7 4v2h14v-2c0-2-3-4-7-4z" />
                         </svg>
-                    </a>
+                    </Link>
 
                     {/* Mobile menu button */}
                     <div className="navbar-mobile-menu-btn">
@@ -61,14 +62,14 @@ export default function Navbar() {
                 {/* Mobile Menu */}
                 {menuOpen && (
                     <div className="navbar-mobile-menu">
-                        <a href="#" className="navbar-link mobile-link">Home</a>
-                        <a href="#" className="navbar-link mobile-link">Our Product</a>
-                        <a href="#" className="navbar-link mobile-link">Oral Health</a>
-                        <a href="#" className="navbar-link mobile-link">Contact Us</a>
-                        <a href="#" className="navbar-link navbar-icon-link mobile-link">
+                        <Link to="/" className="navbar-link mobile-link">Home</Link>
+                        <Link to="/product" className="navbar-link mobile-link">Our Product</Link>
+                        <Link to="/oral-health" className="navbar-link mobile-link">Oral Health</Link>
+                        <Link to="/contact" className="navbar-link mobile-link">Contact Us</Link>
+                        <Link to="/cart" className="navbar-link navbar-icon-link mobile-link">
                             <svg className="navbar-cart-icon" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M3 3h2l.4 2M7 13h10l4-8H5.4" /><circle cx="7" cy="21" r="2" /><circle cx="17" cy="21" r="2" /></svg>
                             Cart
-                        </a>
+                        </Link>
                     </div>
                 )}
             </nav>
