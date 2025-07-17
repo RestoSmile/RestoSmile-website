@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import productImg from "./assets/photo.jpg";
-import "./styles/ProductPage.css";
+import productImg from "../assets/photo.jpg";
+import "../styles/ProductPage.css";
+import Testimonials from "../components/Testimonials";
 
 const productImages = [productImg, productImg, productImg, productImg, productImg];
 
@@ -103,6 +104,7 @@ export default function ProductPage() {
                     </div>
                 </div>
             </div>
+
             {/* Product Description Section */}
             <div className="productpage-desc-multi">
                 <div className="productpage-desc-block">
@@ -130,6 +132,8 @@ export default function ProductPage() {
                     </p>
                 </div>
             </div>
+
+            <Testimonials />
         </div>
     );
 }

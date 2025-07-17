@@ -1,0 +1,197 @@
+/* Root background and centering */
+.contactus-root {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 1rem;
+    margin-bottom: 5rem;
+}
+
+.contactus-container {
+    width: 100%;
+    max-width: 80rem;
+    background: rgba(255, 255, 255, 0.92);
+    border-radius: 2rem;
+    box-shadow: 0 8px 32px 0 rgba(56, 91, 121, 0.18);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+@media (min-width: 768px) {
+    .contactus-container {
+        flex-direction: row;
+    }
+}
+
+/* Left Info Panel */
+.contactus-info {
+    flex: 1;
+    margin: 0.5rem;
+    padding: 2.5rem;
+    border-radius: 2rem;
+    background: linear-gradient(135deg, #2196F3 0%, #1976D2 100%);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 35rem;
+}
+
+.contactus-title {
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contactus-subtitle {
+    color: #e3f2fd;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.contactus-details {
+    margin-bottom: 1.5rem;
+}
+
+.contactus-detail-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.7rem;
+    font-size: 1rem;
+}
+
+.contactus-detail-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 0.75rem;
+    color: #e3f2fd;
+    flex-shrink: 0;
+}
+
+.contactus-detail-address {
+    align-items: flex-start;
+}
+
+.contactus-socials {
+    display: flex;
+    gap: 1.2rem;
+    margin-top: 1.2rem;
+}
+
+.contactus-social-link {
+    color: #fff;
+    transition: color 0.2s;
+    display: flex;
+    align-items: center;
+}
+
+.contactus-social-link:hover {
+    color: #a0e6e2;
+}
+
+.contact-social-icon {
+    width: 1.7rem;
+    height: 1.7rem;
+}
+
+/* Map Desktop */
+.contactus-map-desktop {
+    margin-top: 2.5rem;
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .contactus-map-desktop {
+        display: block;
+    }
+}
+
+/* Right Form Panel */
+.contactus-form-container {
+    flex: 1;
+    padding: 2.5rem;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contactus-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.contactus-form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.contactus-label {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #385B79;
+}
+
+.contactus-input,
+.contactus-textarea {
+    border: 1px solid #cfd8dc;
+    border-radius: 0.7rem;
+    padding: 0.7rem 1rem;
+    font-size: 1rem;
+    background: #f7fafc;
+    color: #222;
+    outline: none;
+    transition: border 0.2s, box-shadow 0.2s;
+}
+
+.contactus-input:focus,
+.contactus-textarea:focus {
+    border: 1.5px solid #2196F3;
+    box-shadow: 0 0 0 2px #a0e6e2;
+}
+
+.contactus-input::placeholder,
+.contactus-textarea::placeholder {
+    color: #999999;
+}
+
+.contactus-submit-btn {
+    width: 100%;
+    padding: 0.9rem 0;
+    border-radius: 0.7rem;
+    background: linear-gradient(90deg, #2196F3 0%, #1976D2 100%);
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.15rem;
+    border: none;
+    box-shadow: 0 2px 8px rgba(33, 150, 243, 0.08);
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.contactus-submit-btn:hover {
+    background: linear-gradient(90deg, #1976D2 0%, #2196F3 100%);
+}
+
+/* Map Mobile */
+.contactus-map-mobile {
+    margin-top: 2.5rem;
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .contactus-map-mobile {
+        display: none;
+    }
+}
+
+.contactus-map {
+    border-radius: 1rem;
+    border: 2px solid #2196F3;
+    box-shadow: 0 2px 12px 0 rgba(33, 150, 243, 0.08);
+}

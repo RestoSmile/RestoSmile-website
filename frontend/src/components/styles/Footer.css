@@ -1,0 +1,20 @@
+.footer-bg {
+    background: linear-gradient(180deg, #2196F3 0%, #1976D2 100%);
+}
+
+.footer-bg p,
+.footer-bg span {
+    color: #fff;
+}
+
+.footer-bg .font-bold {
+    letter-spacing: 0.5px;
+}
+
+.footer-bg .italic {
+    opacity: 0.85;
+}
+
+.footer-bg .text-blue-100 {
+    color: #e3f2fd;
+}
